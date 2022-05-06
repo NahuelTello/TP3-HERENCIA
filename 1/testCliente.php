@@ -1,5 +1,5 @@
 <?php
-include "Cliente.php";
+require_once ('Cliente.php');
 function test_crearCliente(){
     $objCliente = new Cliente("123456", "Nahuel", "Tello", "1");
     echo $objCliente;
