@@ -41,8 +41,7 @@ class CuentaCorriente extends Cuenta{
         $saldoEnCta = parent::getMonto();
         $validate = false;
         if ($saldoEnCta == 0) {
-            $montoaDar = $monto;
-            $montoRestante = $this->getMontoMaximo() - $montoaDar ;
+            $montoRestante = $this->getMontoMaximo() - $monto;
             $this->setMontoMaximo($montoRestante);
             $this->setMonto($monto);
             $validate = true;
